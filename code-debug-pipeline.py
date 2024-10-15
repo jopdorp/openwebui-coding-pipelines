@@ -25,8 +25,8 @@ class Pipeline:
         # This is where you can add your custom pipelines like RAG.
         print(f"pipe:{__name__}")
 
-        OLLAMA_BASE_URL = "http://localhost:11434"
-        MODEL = "llama3"
+        OLLAMA_BASE_URL = "http://host.docker.internal:11434"
+        MODEL = "llama3.2:latest"
 
         if "user" in body:
             print("######################################")
